@@ -16,7 +16,8 @@ onChangeHandler = (event) =>{
     })
 }
 
-addGuestHandler = () =>{    
+addGuestHandler = (event) =>{    
+    event.preventDefault()
     let isComing = this.state.isComing
     if(isComing<10){   
         this.setState({ 
@@ -25,7 +26,8 @@ addGuestHandler = () =>{
     }
 }
 
-removeGuestHandler = () =>{    
+removeGuestHandler = (event) =>{    
+    event.preventDefault()
     let isComing = this.state.isComing
     if(isComing>0){   
         this.setState({ 
