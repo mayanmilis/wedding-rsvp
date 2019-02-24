@@ -211,13 +211,8 @@ font-size: 1.1em;
     align-items: center;
 }
 
-@media(max-width: 300px){   
+@media screen and (max-width: 720px){   
     .Overlay,Content{
-        width: 300px;
-    }
-}
-@media(max-height:300px){  
-    .Overlay,Content{   
-        height: 300px;
+        width: 720px;
     }
 }
