@@ -211,13 +211,13 @@ font-size: 1.1em;
     align-items: center;
 }
 
-@media(max-width: 500px){   
+@media(max-width: 300px){   
     .Overlay,Content{
-        width: 500px;
+        width: 300px;
     }
 }
-@media(max-height:850px){  
+@media(max-height:300px){  
     .Overlay,Content{   
-        height: 850px;
+        height: 300px;
     }
 }
