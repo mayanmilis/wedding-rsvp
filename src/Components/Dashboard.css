@@ -211,8 +211,42 @@ font-size: 1.1em;
     align-items: center;
 }
 
-@media screen and (max-width: 720px){   
-    .Overlay,Content{
+@media(max-width: 720px){   
+    .Container{ 
+        background-color: black;
         width: 720px;
     }
+    .Video-Wrapper{ 
+        width: 720px;
+        
+    }
+    .Video-Wrapper video{   
+        width: 720px;
+    }
+    .Fade{   
+        width: 720px;
+    }
+    .Overlay{  
+        width: 720px;
+    }
+    .Header{    
+        width: 720px;
+    }
+    .Form{  
+        width: 720px;
+    }
+    .Content{   
+        width: 720px  ; 
+    }
+    .DetailsContainer{  
+        width: 720px;
+    }
+
+    .Amount div{    
+        width: 720px;
+    }
+    .SubmitContainer{  
+        width: 720px;
+    }
+  
 }
