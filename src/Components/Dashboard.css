@@ -53,8 +53,7 @@
     padding:15px;
     margin:0;
     font-weight: 700;
-    font-size: 3em;
-    
+    font-size: 3em;  
 }
 .Form{  
     /* border: 1px solid red; */
@@ -211,42 +210,19 @@ font-size: 1.1em;
     align-items: center;
 }
 
-/* @media(min-width: 300px){   
-    .Container{ 
-        width: 300px;
+@media screen and(max-width: 380px){   
+    .Header h1{    
+        font-size: 2em;  
     }
-    .Video-Wrapper{ 
-        width: 300px;
-        
+    .Submit button[id='Yes']{ 
+        width: 150px;
+        font-size: 0.9em;
+        margin: 1%;
     }
-    .Video-Wrapper video{   
-        width: 300px;
+    .Submit button[id='No']{ 
+        width: 150px;
+        font-size: 0.9em;
+        margin: 1%;
     }
-    .Fade{   
-        width: 300px;
-    }
-    .Overlay{  
-        width: 300px;
-    }
-    .Header{    
-        width: 300px;
-    }
-    .Form{  
-        width: 300px;
-    }
-    .Content{   
-        width: 300px  ; 
-    }
-    .DetailsContainer{  
-        width: 300px;
-    }
-
-    .Amount div{    
-        width: 300px;
-    }
-    .SubmitContainer{  
-        width: 300px;
-    }
-  
 }
- */
+
