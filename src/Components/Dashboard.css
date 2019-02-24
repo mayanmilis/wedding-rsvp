@@ -211,42 +211,42 @@ font-size: 1.1em;
     align-items: center;
 }
 
-@media(max-width: 720px){   
+/* @media(min-width: 300px){   
     .Container{ 
-        background-color: black;
-        width: 720px;
+        width: 300px;
     }
     .Video-Wrapper{ 
-        width: 720px;
+        width: 300px;
         
     }
     .Video-Wrapper video{   
-        width: 720px;
+        width: 300px;
     }
     .Fade{   
-        width: 720px;
+        width: 300px;
     }
     .Overlay{  
-        width: 720px;
+        width: 300px;
     }
     .Header{    
-        width: 720px;
+        width: 300px;
     }
     .Form{  
-        width: 720px;
+        width: 300px;
     }
     .Content{   
-        width: 720px  ; 
+        width: 300px  ; 
     }
     .DetailsContainer{  
-        width: 720px;
+        width: 300px;
     }
 
     .Amount div{    
-        width: 720px;
+        width: 300px;
     }
     .SubmitContainer{  
-        width: 720px;
+        width: 300px;
     }
   
 }
+ */
