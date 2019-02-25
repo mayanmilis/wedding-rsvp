@@ -15,7 +15,7 @@ componentDidMount(){
 }
 
 async mountVideo () {   
-    let video = 6;
+    let video;
     try{    
         let mountVideo = Video
         video = mountVideo
