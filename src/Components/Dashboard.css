@@ -68,6 +68,7 @@
     padding:0;
 }
 .Content{   
+    position: absolute;
     width: 100%;
     height: 100%;;
     border: 10px solid rgb(24, 18, 11);
@@ -271,7 +272,7 @@ font-size: 1.1em;
         margin: 10px;
     }
     .Details{   
-        width:50%;
+        width:70%;
         height: 70%;
     }
     .Details h5{   
@@ -306,17 +307,17 @@ font-size: 1.1em;
         color: rgb(5, 48, 128);
     }
     .Submit button[id='Yes']{ 
-        width: 100px;
+        width: 105px;
         height: 40px;
         margin: 10px;
     }
     .Submit button[id='No']{ 
-        width: 100px;
+        width: 105px;
         height: 40px;
         margin: 10px;
     }
     .Details{   
-        width:80%;
+        width:90%;
         height: 70%;
     }
     .Details h5{   
@@ -385,50 +386,5 @@ font-size: 1.1em;
         font-size: 1em;
         /* border: 1px solid blue; */
     }
-    
-@media (max-width: 800px){   
-    .Content{   
-        border: 5px solid rgb(24, 18, 11);
-    }
-    .Header h1{    
-        font-size:2em;  
-        color: rgb(5, 48, 128);
-    }
-    .Submit button[id='Yes']{ 
-        width: 100px;
-        height: 40px;
-        margin: 10px;
-    }
-    .Submit button[id='No']{ 
-        width: 100px;
-        height: 40px;
-        margin: 10px;
-    }
-    .Details{   
-        width:90%;
-        height: 60%;
-    }
-    .Details h5{   
-        font-size: 0.9em;
-        /* border: 1px solid red; */
-        }
-    .Input input{   
-        width: 140px;
-        border-radius: 3px;
-        border: 0;
-        height: 30px;
-        margin-top:5%;
-        margin-bottom:5%;
-        font-weight: 700;
-        font-size: 1em;
-    }
-    .CounterResult{
-        font-weight: 700;
-        font-size: 1.5em;
-    }
-    .Submit{   
-        font-size: 1.5em;
-        /* border: 1px solid blue; */
-    }
-}
+
 }
