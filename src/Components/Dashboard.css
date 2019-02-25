@@ -210,19 +210,90 @@ font-size: 1.1em;
     align-items: center;
 }
 
-@media screen and(max-width: 380px){   
+@media (max-width: 300px){   
     .Header h1{    
-        font-size: 2em;  
+        font-size:1.5em;  
+        color: red;
     }
     .Submit button[id='Yes']{ 
-        width: 150px;
-        font-size: 0.9em;
-        margin: 1%;
+        width: 70px;
+        font-size: 0.5em;
+        margin: 0;
     }
     .Submit button[id='No']{ 
-        width: 150px;
-        font-size: 0.9em;
-        margin: 1%;
+        width: 70px;
+        font-size: 0.5em;
+        margin: 0;
+    }
+    .Details{   
+        width:150px;
+    }
+    .Input input{   
+        width: 140px;
+        border-radius: 3px;
+        border: 0;
+        height: 30px;
+        margin-top:5%;
+        margin-bottom:5%;
+        font-weight: 700;
+        font-size: 1em;
     }
 }
-
+@media (max-width: 400px){   
+    .Header h1{    
+        font-size:1.5em;  
+        color: red;
+    }
+    .Submit button[id='Yes']{ 
+        width: 70px;
+        font-size: 0.5em;
+        margin: 0;
+    }
+    .Submit button[id='No']{ 
+        width: 70px;
+        font-size: 0.5em;
+        margin: 0;
+    }
+    .Details{   
+        width:150px;
+    }
+    .Input input{   
+        width: 140px;
+        border-radius: 3px;
+        border: 0;
+        height: 30px;
+        margin-top:5%;
+        margin-bottom:5%;
+        font-weight: 700;
+        font-size: 1em;
+    }
+}
+@media (max-width: 800px){   
+    .Header h1{    
+        font-size:1.5em;  
+        color: red;
+    }
+    .Submit button[id='Yes']{ 
+        width: 70px;
+        font-size: 0.5em;
+        margin: 0;
+    }
+    .Submit button[id='No']{ 
+        width: 70px;
+        font-size: 0.5em;
+        margin: 0;
+    }
+    .Details{   
+        width:150px;
+    }
+    .Input input{   
+        width: 140px;
+        border-radius: 3px;
+        border: 0;
+        height: 30px;
+        margin-top:5%;
+        margin-bottom:5%;
+        font-weight: 700;
+        font-size: 1em;
+    }
+}

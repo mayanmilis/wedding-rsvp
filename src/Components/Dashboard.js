@@ -7,7 +7,24 @@ class Invitation extends Component{
 state = {   
     name: '',
     number: '',
-    isComing: 0
+    isComing: 0,
+    video: ''
+}
+componentDidMount(){    
+    this.mountVideo()
+}
+
+async mountVideo () {   
+    let video = 6;
+    try{    
+        let mountVideo = Video
+        video = mountVideo
+    } catch(err){    
+        console.log('something went wrong')
+    }
+    this.setState({ 
+        video: video
+    })
 }
 
 onChangeHandler = (event) =>{    
@@ -58,10 +75,11 @@ notComingHandler = () =>{
 // let isComing = this.state.isComing;
 render(){   
     console.log(this.state.name)
+    let video = Video
     return( 
         <div className='Container'>
             <div className='Video-Wrapper'>   
-                <video src={Video} autoPlay={true} loop={true}></video>
+                <video src={this.state.video} autoPlay={true} loop={true}></video>
             </div>
             <div className='Fade'></div>
             <div className='Overlay'>   
