@@ -280,7 +280,7 @@ font-size: 1.1em;
         /* border: 1px solid red; */
         }
     .Input input{   
-        width: 140px;
+        width: 50%;
         border-radius: 3px;
         border: 0;
         height: 30px;
@@ -303,17 +303,17 @@ font-size: 1.1em;
         border: 5px solid rgb(24, 18, 11);
     }
     .Header h1{    
-        font-size:2em;  
+        font-size:2.5em;  
         color: rgb(5, 48, 128);
     }
     .Submit button[id='Yes']{ 
-        width: 105px;
-        height: 40px;
+        width: 150px;
+        height: 70px;
         margin: 10px;
     }
     .Submit button[id='No']{ 
-        width: 105px;
-        height: 40px;
+        width: 150px;
+        height: 70px;
         margin: 10px;
     }
     .Details{   
@@ -321,11 +321,11 @@ font-size: 1.1em;
         height: 70%;
     }
     .Details h5{   
-        font-size: 0.9em;
+        font-size: 1.5em;
         /* border: 1px solid red; */
         }
     .Input input{   
-        width: 140px;
+        width: 50%;
         border-radius: 3px;
         border: 0;
         height: 30px;
@@ -339,7 +339,7 @@ font-size: 1.1em;
         font-size: 1.5em;
     }
     .Submit{   
-        font-size: 1.5em;
+        font-size: 2em;
         /* border: 1px solid blue; */
     }
 }
