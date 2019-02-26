@@ -216,7 +216,7 @@ font-size: 1.1em;
     justify-content: center;
     align-items: center;
 }
-@media (max-height: 600px){ 
+/* @media (max-height: 720px){ 
     * {
         box-sizing: border-box;
       }
@@ -242,17 +242,16 @@ font-size: 1.1em;
     }
     .Form{  
         height: 100%;
-        /* border: 1px solid greenyellow; */
+
     }
     .DetailsContainer{  
-        /* border: 1px solid red; */
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.767);
     }
-}
+} */
 
 @media (max-width: 2000px){   
     .Video-Wrapper{ 
