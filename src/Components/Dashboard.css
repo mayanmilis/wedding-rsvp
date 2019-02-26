@@ -216,7 +216,7 @@ font-size: 1.1em;
     justify-content: center;
     align-items: center;
 }
-/* @media (max-height: 720px){ 
+@media (max-height: 600px){ 
     * {
         box-sizing: border-box;
       }
@@ -251,7 +251,7 @@ font-size: 1.1em;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.767);
     }
-} */
+}
 
 @media (max-width: 2000px){   
     .Video-Wrapper{ 
