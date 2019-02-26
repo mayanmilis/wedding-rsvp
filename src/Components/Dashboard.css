@@ -217,6 +217,9 @@ font-size: 1.1em;
     align-items: center;
 }
 @media (max-height: 600px){ 
+    * {
+        box-sizing: border-box;
+      }
     .Video-Wrapper{ 
           overflow: hidden;
           height: 100vh;
