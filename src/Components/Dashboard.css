@@ -3,6 +3,7 @@
   }
 .Container{ 
     background-color: black;
+
 }
 .Video-Wrapper{ 
     position: absolute;
@@ -16,11 +17,11 @@
     align-items: center;
     z-index: 1;
     background-color: black;
+    
 }
 .Video-Wrapper video{   
     width: 250%;
     height: 250%;
-    overflow: hidden;
 }
 .Fade{   
     position: absolute;
@@ -28,7 +29,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0);
     z-index: 2;
-    background-image:linear-gradient(black 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, black 75%);
+    background-image:linear-gradient(black 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, black 75%)
 }
 .Overlay{  
     position: absolute;
@@ -216,10 +217,7 @@ font-size: 1.1em;
     align-items: center;
 }
 @media (max-height: 600px){ 
-    * {
-        box-sizing: border-box;
-      }
-      .Video-Wrapper{ 
+    .Video-Wrapper{ 
           overflow: hidden;
           height: 100vh;
     }
@@ -250,10 +248,8 @@ font-size: 1.1em;
         align-items: center;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.767);
-        
     }
 }
-
 
 @media (max-width: 1920px){   
     .Content{   
