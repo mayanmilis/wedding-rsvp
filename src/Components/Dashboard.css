@@ -256,7 +256,7 @@ font-size: 1.1em;
 }
 
 
-@media (max-width: 1920px){   
+@media (max-width: 2500px){   
     .Video-Wrapper video{ 
         overflow: hidden;
         height: 100vh;
