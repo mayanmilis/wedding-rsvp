@@ -155,7 +155,7 @@ font-size: 2.5em;
 }
 .CounterResult{
     font-weight: 700;
-    font-size: 2em;
+    font-size: 3em;
 }
 .SubmitContainer{  
     /* border: 1px solid red; */
@@ -224,15 +224,32 @@ font-size: 2.5em;
     justify-content: center;
     align-items: center;
 }
-/* @media (max-height: 600px){ 
-    .Header h1{    
-        font-size:2.5em;  
-        color: rgb(128, 5, 46);
+@media (max-height: 600px){ 
+    .Form{  
+        height: 100%;
     }
-    .Submit,.Amount{  
+    .Header{    
+        height: 0;
+    }
+    .Submit h5,button{    
         display: none;
     }
-} */
+    .Header h1{
+        display: none;
+    }
+    .Details{   
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.842);
+    }
+.DetailsContainer{
+    background-color:rgba(0, 0, 0, 0.445); 
+    height: 100%;
+}
+.SubmitContainer{   
+    height: 0;
+}
+
+}
 
 @media (max-width: 1920px){   
     .Header h1{    
@@ -263,7 +280,6 @@ font-size: 2.5em;
     }
     .CounterResult{
         font-weight: 700;
-        font-size: 2.5em;
     }
     .Submit{   
         font-size: 1.5em;
@@ -278,6 +294,7 @@ font-size: 2.5em;
         font-size:4em;  
         color: rgb(5, 89, 128);
     }
+
     .Submit button[id='Yes']{ 
         width: 150px;
         height: 50px;
@@ -302,7 +319,6 @@ font-size: 2.5em;
     }
     .CounterResult{
         font-weight: 700;
-        font-size:2.5em;
     }
     .Submit{   
         font-size: 1.5em;
@@ -340,7 +356,6 @@ font-size: 2.5em;
     }
     .CounterResult{
         font-weight: 700;
-        font-size:2em;
     }
     .Submit{   
         font-size: 1.5em;
