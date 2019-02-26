@@ -231,7 +231,7 @@ font-size: 2.5em;
     .Header{    
         height: 0;
     }
-    .Submit h5,button{    
+    .Submit h5{    
         display: none;
     }
     .Header h1{
