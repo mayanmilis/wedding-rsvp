@@ -216,7 +216,7 @@ font-size: 1.1em;
     justify-content: center;
     align-items: center;
 }
-@media (max-height: 600px) and (orientation: landscape){ 
+@media (max-height: 600px){ 
     * {
         box-sizing: border-box;
       }
@@ -255,6 +255,10 @@ font-size: 1.1em;
 }
 
 @media (max-width: 1920px){   
+    .Video-Wrapper{ 
+        overflow: hidden;
+        height: 100vh;
+  }
     .Content{   
         border: 5px solid rgb(24, 18, 11);
     }
@@ -301,7 +305,11 @@ font-size: 1.1em;
     }
 }
 
-@media (max-width: 800px){   
+@media (max-width: 800px){  
+    .Video-Wrapper{ 
+        overflow: hidden;
+        height: 100vh;
+  } 
     .Content{   
         border: 5px solid rgb(24, 18, 11);
     }
@@ -349,6 +357,10 @@ font-size: 1.1em;
 
 }
 @media (max-width: 500px){   
+    .Video-Wrapper{ 
+        overflow: hidden;
+        height: 100vh;
+  }
     .Content{   
         border: 5px solid rgb(24, 18, 11);
     }
@@ -396,6 +408,10 @@ font-size: 1.1em;
 }
 
 @media (max-width: 350px){   
+    .Video-Wrapper{ 
+        overflow: hidden;
+        height: 100vh;
+  }
     .Header h1{    
         font-size:2.8em;  
         color: rgb(255, 0, 43);
@@ -440,6 +456,10 @@ font-size: 1.1em;
 
 }
 @media (max-width: 280px){   
+    .Video-Wrapper{ 
+        overflow: hidden;
+        height: 100vh;
+  }
     .Header h1{    
         font-size:2.5em;  
         color: rgb(255, 0, 179);
