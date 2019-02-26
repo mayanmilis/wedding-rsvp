@@ -80,7 +80,7 @@ render(){
             <div className='Overlay'>   
             <div className='Content'>   
             <div className='Header'>   
-            <h1>אישור הגעה לחתונה של</h1>
+            <h1>!פינוקיו ובלה מתחתנים</h1>
             </div>
             <div className='Form'>  
                 <form>  
