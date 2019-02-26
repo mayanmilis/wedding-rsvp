@@ -216,7 +216,7 @@ font-size: 1.1em;
     justify-content: center;
     align-items: center;
 }
-@media (max-height: 600px){ 
+@media (max-height: 600px) and (orientation: landscape){ 
     * {
         box-sizing: border-box;
       }
