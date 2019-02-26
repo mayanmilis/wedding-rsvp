@@ -68,18 +68,13 @@ notComingHandler = () =>{
         isComing: coming
     })
 }
-
-
-// let name = this.state.name;
-// let number = this.state.number;
-// let isComing = this.state.isComing;
 render(){   
     console.log(this.state.name)
     let video = Video
     return( 
         <div className='Container'>
             <div className='Video-Wrapper'>   
-                <video src={this.state.video} autoPlay={true} loop={true}></video>
+                <video src={this.state.video} autoPlay={true} loop={true} muted={true}></video>
             </div>
             <div className='Fade'></div>
             <div className='Overlay'>   

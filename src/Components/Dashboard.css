@@ -9,8 +9,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
     display: flex;
     overflow: hidden;
     justify-content: center;
@@ -103,7 +103,7 @@ font-size: 1.1em;
 }
 .Input input{   
     border-radius: 3px;
-    border: 12px solid rgb(0, 0, 0);
+    border: 2px solid rgba(61, 61, 61, 0.712);
     height: 30px;
     margin-top:5%;
     margin-bottom:5%;
@@ -215,6 +215,7 @@ font-size: 1.1em;
         font-size:2.5em;  
         color: rgb(128, 5, 46);
         display: none;
+
     }
     .Header{    
         height: 0;
@@ -237,7 +238,7 @@ font-size: 1.1em;
         justify-content: center;
         align-items: center;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.767);
     }
 }
 
@@ -257,21 +258,21 @@ font-size: 1.1em;
         margin: 20px;
     }
     .Details{   
-        width:350px;
-        height: 70%;
+        width:600px;
+        height: 90%;
     }
     .Details h5{   
         font-size: 1.5em;
         }
     .Input input{   
-        width: 250px;
+        width: 50%;
         border-radius: 3px;
-        border: 0;
-        height: 30px;
+        border: 2px solid rgba(61, 61, 61, 0.712);
+        height: 50px;
         margin-top:5%;
         margin-bottom:5%;
         font-weight: 700;
-        font-size: 0.8em;
+        font-size: 1em;
     }
     .CounterResult{
         font-weight: 700;
@@ -279,6 +280,10 @@ font-size: 1.1em;
     }
     .Submit{   
         font-size: 1.5em;
+    }
+    .Submit h5{   
+        font-size: 1.2em;
+        margin-bottom: 10px;
     }
 }
 
@@ -301,17 +306,17 @@ font-size: 1.1em;
         margin: 15px;
     }
     .Details{   
-        width:70%;
-        height: 70%;
+        width:80%;
+        height: 90%;
     }
     .Details h5{   
         font-size: 1.5em;
         }
     .Input input{   
-        width:300px;
+        width:50%;
         border-radius: 3px;
-        border: 2px solid rgb(134, 134, 134);
-        height: 30px;
+        border: 2px solid rgba(61, 61, 61, 0.712);
+        height: 50px;
         margin-top:5%;
         margin-bottom:5%;
         font-weight: 700;
@@ -326,14 +331,16 @@ font-size: 1.1em;
     }
     .Submit h5{   
         font-size: 1.2em;
+        margin-bottom: 10px;
     }
+
 }
 @media (max-width: 500px){   
     .Content{   
         border: 5px solid rgb(24, 18, 11);
     }
     .Header h1{    
-        font-size:2em;  
+        font-size:2.5em;  
         color: rgb(255, 136, 0);
     }
     .Submit button[id='Yes']{ 
@@ -347,21 +354,21 @@ font-size: 1.1em;
         margin: 10px;
     }
     .Details{   
-        width:90%;
-        height: 70%;
+        width:100%;
+        height: 90%;
     }
     .Details h5{   
         font-size: 1.5em;
         }
     .Input input{   
-        width: 80%;
+        width: 60%;
+        border: 2px solid rgba(61, 61, 61, 0.712);
         border-radius: 3px;
-        border: 0;
-        height: 30px;
+        height: 50px;
         margin-top:5%;
         margin-bottom:5%;
         font-weight: 700;
-        font-size: 0.75em;
+        font-size: 1em;
     }
     .CounterResult{
         font-weight: 700;
@@ -369,6 +376,10 @@ font-size: 1.1em;
     }
     .Submit{   
         font-size: 1.5em;
+    }
+    .Submit h5{   
+        font-size: 1.2em;
+        margin-bottom: 10px;
     }
 }
 
@@ -388,17 +399,17 @@ font-size: 1.1em;
         margin: 10px;
     }
     .Details{   
-        width:280px;
-        height: 60%;
+        width:100%;
+        height: 90%;
     }
     .Details h5{   
         font-size: 1.2em;
         }
     .Input input{   
-        width: 200px;
+        width: 70%;
         border-radius: 3px;
-        border: 0;
-        height: 30px;
+        border: 2px solid rgba(61, 61, 61, 0.712);
+        height: 40px;
         margin-top:5%;
         margin-bottom:5%;
         font-weight: 700;
@@ -413,38 +424,42 @@ font-size: 1.1em;
         font-size: 2em;
     }
     .Submit{   
+        font-size:1.2em;
+    }
+    .Submit h5{   
         font-size: 1.2em;
+        margin-bottom: 10px;
     }
 
 }
 @media (max-width: 280px){   
     .Header h1{    
-        font-size:1.2em;  
+        font-size:2em;  
         color: rgb(255, 0, 179);
     }
     .Submit button[id='Yes']{ 
         width: 70px;
         height: 40px;
         font-size:0.75em;
-        margin: 5px;
+        margin: 15px;
     }
     .Submit button[id='No']{ 
         width: 70px;
         height: 40px;
         font-size: 0.75em;
-        margin: 5px;
+        margin: 15px;
     }
     .Details{   
-        width:90%;
-        height: 60%;
+        width:100%;
+        height: 90%;
     }
     .Details h5{   
-        font-size: 0.75em;
+        font-size: 1em;
         }
     .Input input{   
         width: 80%;
         border-radius: 3px;
-        border: 0;
+        border: 2px solid rgba(61, 61, 61, 0.712);
         height: 30px;
         margin-top:5%;
         margin-bottom:5%;
@@ -458,6 +473,10 @@ font-size: 1.1em;
     .Submit{   
         font-size: 1em;
 
+    }
+    .Submit h5{   
+        font-size: 1.2em;
+        margin-bottom: 10px;
     }
 
 }
