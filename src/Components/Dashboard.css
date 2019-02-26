@@ -41,7 +41,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 .Header{    
     height: 25%;
@@ -51,7 +51,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid black; */
+    border: 1px solid rgb(0, 255, 21);
 }
 .Header h1{    
     padding:15px;
@@ -61,7 +61,7 @@
     
 }
 .Form{  
-    /* border: 1px solid red; */
+    border: 1px solid rgb(255, 0, 212);
     height: 75%;
 }
 .Form form{ 
@@ -84,7 +84,7 @@
     background-image:linear-gradient(rgba(255, 255, 255, 0.829) 24%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, rgb(255, 255, 255, 0.829) 76%);
 }
 .DetailsContainer{  
-    /* border: 1px solid red; */
+    border: 1px solid rgb(255, 136, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,7 +95,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    /* border: 1px solid greenyellow; */
+    border: 1px solid greenyellow;
     width:300px;
     background-color: rgba(255, 255, 255, 0.705);
     border-radius: 3px;
@@ -153,7 +153,7 @@ font-size: 1.1em;
     font-size: 2em;
 }
 .SubmitContainer{  
-    /* border: 1px solid red; */
+    border: 1px solid rgb(0, 68, 255);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,7 +167,7 @@ font-size: 1.1em;
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
-    /* border: 1px solid blue; */
+    border: 1px solid rgb(255, 0, 170);
 }
 .Submit h5{ 
     margin: 0;
