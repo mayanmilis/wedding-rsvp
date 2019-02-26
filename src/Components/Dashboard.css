@@ -10,13 +10,14 @@
     top: 0;
     left: 0;
     min-width: 100%;
-    min-height: 100%;
+    height: 100vh;
     display: flex;
     overflow: hidden;
     justify-content: center;
     align-items: center;
     z-index: 1;
     background-color: black;
+    overflow: hidden;
     
 }
 .Video-Wrapper video{   
@@ -254,10 +255,12 @@ font-size: 1.1em;
     }
 }
 
+
 @media (max-width: 1920px){   
-    .Video-Wrapper{ 
+    .Video-Wrapper video{ 
         overflow: hidden;
         height: 100vh;
+        
   }
     .Content{   
         border: 5px solid rgb(24, 18, 11);
