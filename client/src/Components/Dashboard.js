@@ -50,7 +50,7 @@ comingHandler = (event) =>{
     event.preventDefault();  
     let coming = true;
     let comingDisplay = true
-    let date = new Date;
+    let date = new Date();
     date = moment(date).format('MMMM Do YYYY, h:mm:ss a');
     this.setState({ 
         isComing: coming,
@@ -71,7 +71,7 @@ notComingHandler = (event) =>{
     event.preventDefault();  
     let coming = false;
     let notComingDisplay = true
-    let date = new Date;
+    let date = new Date();
     date = moment(date).format('MMMM Do YYYY, h:mm:ss a');
     this.setState({ 
         isComing: coming,
@@ -167,13 +167,13 @@ const mapDispatchToProps = (dispatch) => {
 const mapStateToProps = (state) => {    
     console.log(state)
     return{ 
-        list: state.firestore
+       list: state.firestore.data.list
     }
 }
 
-export default compose( 
-    connect(mapStateToProps,mapDispatchToProps),
-    firestoreConnect([  
-        { collection: 'list'  }
-    ])
-)(Invitation);
+    export default compose(
+        connect(mapStateToProps,mapDispatchToProps),
+        firestoreConnect([
+            { collection: 'list' }
+        ])
+    )(Invitation);
