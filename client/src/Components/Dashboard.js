@@ -48,7 +48,7 @@ removeGuestHandler = (event) =>{
 
 comingHandler = (event) =>{
     event.preventDefault();  
-    let coming = true;
+    let coming = "כן";
     let comingDisplay = true
     let date = new Date();
     date = moment(date).format('MMMM Do YYYY, h:mm:ss a');
@@ -69,7 +69,7 @@ comingHandler = (event) =>{
 
 notComingHandler = (event) =>{  
     event.preventDefault();  
-    let coming = false;
+    let coming = "לא";
     let notComingDisplay = true
     let date = new Date();
     date = moment(date).format('MMMM Do YYYY, h:mm:ss a');
@@ -81,6 +81,7 @@ notComingHandler = (event) =>{
     let guest = {   
         name: this.state.name,
         isComing: coming,
+        number: 0,
         date: date
     }
     this.props.addGuest(guest)

@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+  }
+.ListContainer{ 
+    position: absolute;
+    background-color: rgb(1, 96, 151);
+    width: 100%;
+    height: 100%;
+}
+.SummaryContainer{  
+    position: sticky;
+    height: 30%;
+    /* border: 2px solid red; */
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.534);
+}
+.Summary{  
+    width: 30%; 
+    text-align: right;
+    
+}
+.Summary div{   
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.Table{ 
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 70%;
+    /* border: 2px solid green; */
+    overflow: scroll;
+}
+.Table table{
+    padding: 10px;
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 5px;
+    border-spacing: 5px;
+    background-color: rgba(255, 255, 255, 0.554);
+}
+.Table tr{  
+    
+}
+.Table th{   
+    border: 1px solid black;
+    height: 50px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+}
+.Table td{
+    padding: 5px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.507);
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 1.2em;
+}
+.Table td[id='name']{
+    width:30%;
+}
+
+@media (max-width: 850px){  
+    .Summary{  
+        width: 250px; 
+    }
+    .Table table{
+        overflow: hidden;
+        width: 95%;
+        padding: 5px;
+    }
+    .Table th{   
+        border: 1px solid black;
+        height: 50px;
+        font-size: 1em;
+        border-radius: 5px;
+        text-align: center;
+        background-color: white;
+    }
+    .Table td{
+        padding: 5px;
+        height: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.507);
+        text-align: center;
+        border-radius: 5px;
+        background-color: white;
+        font-size: 0.8em;
+    }
+}
