@@ -95,6 +95,23 @@
     background-color: white;
     /* border: 1px solid red; */
 }
+.Err button{   
+    font-family: 'Amatic SC', cursive;
+    background-color: rgba(0, 0, 0, 0.863);
+    border: 0;
+    width:100px;
+    height:50px;
+    border-radius: 3px;
+    color: white;
+    font-weight: 700;
+    font-size: 0.75em;
+    transition-duration: 200ms;
+}
+.Err button:hover{
+    background-color: rgb(212, 181, 0);
+    transition-duration: 200ms;
+}
+
 .Content{   
     font-family: 'Amatic SC', cursive;
     width: 100%;

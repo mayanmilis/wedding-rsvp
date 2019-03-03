@@ -168,7 +168,7 @@ render(){
                     </div>
                 </div> 
                 <div className='ComingContainer' style={{display:`${numberErrDisplay}`}}>   
-                    <div className='Coming'>   
+                    <div className='Err'>   
                     <div>נא למלא מספר אורחים</div>
                     <button onClick={this.numberErrHandler}>אישור</button>
                     </div>
