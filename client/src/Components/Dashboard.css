@@ -71,7 +71,7 @@
     margin: 0;
     padding:0;
 }
-.NotComingContainer, .ComingContainer{   
+.NotComingContainer, .ComingContainer, .ErrContainer{   
     position: absolute;
     justify-content: center;
     align-items: center;
@@ -83,7 +83,7 @@
     height:100%;
     background-color: rgba(0, 0, 0, 0.931);
 }
-.NotComing, .Coming{ 
+.NotComing, .Coming, .Err{ 
     justify-content: center;
     align-items: center;
     display: flex;

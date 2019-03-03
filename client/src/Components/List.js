@@ -32,7 +32,7 @@ class List extends Component{
                 <div className='SummaryContainer'>   
                     <div className='Summary'>   
                             <div>{coming} :סה"כ אישרו הגעה</div>
-                            <div>{notComing} :סה"כ לא הגעה</div>
+                            <div>{notComing} :סה"כ לא אישרו הגעה</div>
                             <div>{totalAmount} :סה"כ אורחים</div>
                     </div> 
                 </div>

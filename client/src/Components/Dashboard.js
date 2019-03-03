@@ -15,7 +15,9 @@ state = {
     isComing: '',
     notComingDisplay: false,
     comingDisplay: false,
-    date: ''
+    date: '',
+    nameErr: false,
+    numberErr: false
 }
 
 onChangeHandler = (event) =>{    
@@ -50,21 +52,35 @@ comingHandler = (event) =>{
     event.preventDefault();  
     let coming = "כן";
     let comingDisplay = true
+    let name = this.state.name
+    let number = this.state.number
     let date = new Date();
     date = moment(date).format('MMMM Do YYYY, h:mm:ss a');
-    this.setState({ 
-        isComing: coming,
-        comingDisplay: comingDisplay,
-        date: date
-    })
-    let guest = {   
-        name: this.state.name,
-        isComing: coming,
-        number: this.state.number,
-        date: date
+    if(name===''){  
+        this.setState({ 
+            nameErr: true
+        })
     }
-    this.props.addGuest(guest)
-    console.log(guest)
+    if(number===0){  
+        this.setState({ 
+            numberErr: true
+        })
+    }
+    if(name!==''&&number>0){    
+        this.setState({ 
+            isComing: coming,
+            comingDisplay: comingDisplay,
+            date: date
+        })
+        let guest = {   
+            name: this.state.name,
+            isComing: coming,
+            number: this.state.number,
+            date: date
+        }
+        this.props.addGuest(guest)
+        console.log(guest)
+    }
 }
 
 notComingHandler = (event) =>{  
@@ -88,17 +104,42 @@ notComingHandler = (event) =>{
     console.log(guest)
 }
 
+nameErrHandler = (event) =>{ 
+    event.preventDefault();  
+    let nameErr = !this.state.nameErr;
+
+    this.setState({ 
+        nameErr: nameErr
+    })
+}
+
+numberErrHandler = (event) =>{ 
+    event.preventDefault();  
+    let numberErr = !this.state.numberErr;
+
+    this.setState({ 
+        numberErr: numberErr
+    })
+}
 
 render(){   
     console.log(this.state)
     let video = Video
     let notComingDisplay = 'none';
-    let comingDisplay = 'none'
+    let comingDisplay = 'none';
+    let nameErrDisplay = 'none';
+    let numberErrDisplay = 'none';
     if(this.state.notComingDisplay){  
         notComingDisplay = ''
     }
     if(this.state.comingDisplay){  
         comingDisplay = ''
+    }
+    if(this.state.nameErr){  
+        nameErrDisplay = ''
+    }
+    if(this.state.numberErr){  
+        numberErrDisplay = ''
     }
     return( 
         <div className='Container'>
@@ -118,6 +159,18 @@ render(){
                     <div className='Coming'>   
                     <div>תשובתך נקלטה במערכת</div>
                     <div>!ניפגש באירוע</div>
+                    </div>
+                </div> 
+                <div className='ErrContainer' style={{display:`${nameErrDisplay}`}}>   
+                    <div className='Err'>   
+                    <div>נא למלא שם מלא</div>
+                    <button onClick={this.nameErrHandler}>אישור</button>
+                    </div>
+                </div> 
+                <div className='ComingContainer' style={{display:`${numberErrDisplay}`}}>   
+                    <div className='Coming'>   
+                    <div>נא למלא מספר אורחים</div>
+                    <button onClick={this.numberErrHandler}>אישור</button>
                     </div>
                 </div> 
             <div className='Header'>   
