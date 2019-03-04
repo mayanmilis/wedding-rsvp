@@ -15,7 +15,7 @@ class Signin extends Component{
     })
     }
 
-    signIn = (event) =>{ 
+    onSubmitHandler = (event) =>{ 
         event.preventDefault();
         this.props.signIn(this.state)
     }
@@ -28,7 +28,7 @@ class Signin extends Component{
                             <h1>Sign-In</h1>
                         </div>
                         <div className='FormContainer'>   
-                            <form onSubmit={this.signIn}>  
+                            <form onSubmit={this.onSubmitHandler}>  
                                 <div>   
                                     <input type='text' id='email' placeholder='Enter Email' onChange={this.onChangeHandler} value={this.state.email}/>
                                 </div>
