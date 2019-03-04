@@ -55,8 +55,9 @@ comingHandler = (event) =>{
     let name = this.state.name
     let number = this.state.number
     let date = new Date();
+    let regex = /[\u0590-\u05FF\uFB2A-\uFB4E]/
     date = moment(date).format('MMMM Do YYYY, h:mm:ss a');
-    if(name===''){  
+    if(!regex.test(name)){  
         this.setState({ 
             nameErr: true
         })
@@ -66,7 +67,7 @@ comingHandler = (event) =>{
             numberErr: true
         })
     }
-    if(name!==''&&number>0){    
+    if(regex.test(name)&&number>0){    
         this.setState({ 
             isComing: coming,
             comingDisplay: comingDisplay,
@@ -88,20 +89,29 @@ notComingHandler = (event) =>{
     let coming = "לא";
     let notComingDisplay = true
     let date = new Date();
+    let name = this.state.name
+    let regex = /[\u0590-\u05FF\uFB2A-\uFB4E]/
     date = moment(date).format('MMMM Do YYYY, h:mm:ss a');
-    this.setState({ 
-        isComing: coming,
-        notComingDisplay: notComingDisplay,
-        date: date
-    })
-    let guest = {   
-        name: this.state.name,
-        isComing: coming,
-        number: 0,
-        date: date
+    if(!regex.test(name)){  
+        this.setState({ 
+            nameErr: true
+        })
     }
-    this.props.addGuest(guest)
-    console.log(guest)
+    if(regex.test(name)){
+        this.setState({ 
+            isComing: coming,
+            notComingDisplay: notComingDisplay,
+            date: date
+        })
+        let guest = {   
+            name: this.state.name,
+            isComing: coming,
+            number: 0,
+            date: date
+        }
+        this.props.addGuest(guest)
+        console.log(guest)
+    }
 }
 
 nameErrHandler = (event) =>{ 
@@ -164,13 +174,13 @@ render(){
                 <div className='ErrContainer' style={{display:`${nameErrDisplay}`}}>   
                     <div className='Err'>   
                     <div>נא למלא שם מלא</div>
-                    <button onClick={this.nameErrHandler}>אישור</button>
+                    <button onClick={this.nameErrHandler}>חזרה</button>
                     </div>
                 </div> 
                 <div className='ComingContainer' style={{display:`${numberErrDisplay}`}}>   
                     <div className='Err'>   
                     <div>נא למלא מספר אורחים</div>
-                    <button onClick={this.numberErrHandler}>אישור</button>
+                    <button onClick={this.numberErrHandler}>חזרה</button>
                     </div>
                 </div> 
             <div className='Header'>   
@@ -225,9 +235,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-    export default compose(
-        connect(mapStateToProps,mapDispatchToProps),
-        firestoreConnect([
-            { collection: 'list' }
-        ])
-    )(Invitation);
+    export default connect(mapStateToProps,mapDispatchToProps)(Invitation)

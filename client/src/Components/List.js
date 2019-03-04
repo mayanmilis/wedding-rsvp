@@ -74,6 +74,7 @@ class List extends Component{
 
 const mapStateToProps = (state) => {  
     console.log(state)  
+    console.log(state.firebase.auth)
     let arr = state.firestore.ordered.list
     let list = [];
     if(arr){   
@@ -83,13 +84,14 @@ const mapStateToProps = (state) => {
     }
 
     return{ 
-        list: list
+        list: list,
+
     }
 }
 
 export default compose(
     connect(mapStateToProps),
     firestoreConnect([
-        { collection: 'list' }
+        { collection: 'list', orderBy: ['date', 'desc']}
     ])
 )(List);
