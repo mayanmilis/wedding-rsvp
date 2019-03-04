@@ -1,7 +1,7 @@
 import React ,{Component} from 'react'
 import './SignIn.css'
 import {connect} from 'react-redux'
-import {signIn} from '../Store/AuthActions'
+import {signIn, signOut} from '../Store/AuthActions'
 
 class Signin extends Component{ 
     state = {   
@@ -19,7 +19,11 @@ class Signin extends Component{
         event.preventDefault();
         this.props.signIn(this.state)
     }
+    signOutHandler = () =>{    
+        this.props.signOut()
+    }
     render(){ 
+        console.log(this.props)
         console.log(this.state)  
         return( 
             <div className='SigninContainer'>
@@ -28,7 +32,7 @@ class Signin extends Component{
                             <h1>Sign-In</h1>
                         </div>
                         <div className='FormContainer'>   
-                            <form onSubmit={this.onSubmitHandler}>  
+                            <form>  
                                 <div>   
                                     <input type='text' id='email' placeholder='Enter Email' onChange={this.onChangeHandler} value={this.state.email}/>
                                 </div>
@@ -36,7 +40,10 @@ class Signin extends Component{
                                     <input type='password' id='password' placeholder='Enter Password' onChange={this.onChangeHandler} value={this.state.value}/>
                                 </div>
                                 <div className='Submit'>   
-                                    <button>SUBMIT</button>
+                                    <button onClick={this.onSubmitHandler}>SUBMIT</button>
+                                </div>
+                                <div className='Submit'>   
+                                    <button onClick={this.signOutHandler}>Sign Out</button>
                                 </div>
                             </form>
                         </div>
@@ -55,7 +62,8 @@ const mapStateToProps = (state) =>{
 
 const mapDispatchToProps = (dispatch) =>{   
     return{ 
-        signIn: (creds) => dispatch(signIn(creds))
+        signIn: (creds) => dispatch(signIn(creds)),
+        signOut: () => dispatch(signOut())
     }
 }
 
