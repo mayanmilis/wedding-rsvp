@@ -3,6 +3,7 @@ import {connect} from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase'
 import {compose} from 'redux'
 import './List.css'
+import {Redirect} from 'react-router-dom'
 
 class List extends Component{   
     state = {   
@@ -13,7 +14,10 @@ class List extends Component{
 
 
     render(){   
-        let {list} = this.props;
+        let {list, auth} = this.props;
+        if(auth.uid){   
+            console.log(auth.uid)
+        }
         let coming = 0;
         let notComing = 0;
         let totalAmount = 0;
@@ -82,9 +86,15 @@ const mapStateToProps = (state) => {
             list.push(arr[i])
         }
     }
-
+    let auth = state.firebase.auth
+    let uid;
+    if(auth.uid){   
+        uid = auth.uid
+    }
+    console.log(uid)
     return{ 
         list: list,
+        auth: auth
 
     }
 }
