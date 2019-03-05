@@ -10,7 +10,7 @@
 }
 .SummaryContainer{  
     position: sticky;
-    height: 30%;
+    height: 35%;
     /* border: 2px solid red; */
     font-size: 1.5em;
     display: flex;
@@ -37,7 +37,7 @@
     padding: 0;
     display: flex;
     justify-content: center;
-    height: 70%;
+    height: 65%;
     /* border: 2px solid green; */
     overflow: scroll;
 }
