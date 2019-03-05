@@ -31,7 +31,7 @@ class Signin extends Component{
         return( 
             <div className='SigninContainer'>
                 <div className='Signin'>   
-                    <div className='Header'>
+                    <div className='SignInHeader'>
                             <h1>Sign-In</h1>
                         </div>
                         <div className='FormContainer'>   
