@@ -3,6 +3,7 @@
   }
 .Container{ 
     background-color: black;
+    font-family: 'Amatic SC', cursive;
 
 }
 .Video-Wrapper{ 
@@ -50,7 +51,7 @@
     color: rgb(255, 255, 255);
     background-color: rgb(255, 255, 255); 
     color: black;
-    font-family: 'Amatic SC', cursive;
+
     /* border: 1px solid black; */
 }
 .Header h1{    

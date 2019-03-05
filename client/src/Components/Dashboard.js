@@ -184,7 +184,7 @@ render(){
                     </div>
                 </div> 
             <div className='Header'>   
-            <h1>!פינוקיו ובלה מתחתנים</h1>
+            <h1>!ירון ואלה מתחתנים</h1>
             </div>
             <div className='Form'>  
                 <form>  

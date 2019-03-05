@@ -7,6 +7,7 @@
     height: 100%;
     width: 100%;
     position: absolute;
+    font-family: 'Amatic SC', cursive;
 }
 .Signin{    
     width: 350px;
@@ -20,8 +21,7 @@
 }
 
 .SignInHeader{    
-    margin-top: 30px;
-    padding: 50px;
+    font-size: 2em;
     background-color: rgba(255, 255, 255, 0);
 }
 .FormContainer{ 
@@ -41,7 +41,6 @@
     text-align: center;
 }
 .Submit button{   
-    margin-top: 20px;
     font-family: 'Amatic SC', cursive;
     background-color: rgba(0, 0, 0, 0.863);
     border: 0;
