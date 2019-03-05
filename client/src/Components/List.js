@@ -4,6 +4,8 @@ import { firestoreConnect } from 'react-redux-firebase'
 import {compose} from 'redux'
 import './List.css'
 import {Redirect} from 'react-router-dom'
+import {signOut} from '../Store/AuthActions'
+import './SignIn.css'
 
 class List extends Component{   
     state = {   
@@ -12,11 +14,14 @@ class List extends Component{
         totalComing: ''
     }
 
+    signOutHandler = () =>{    
+        this.props.signOut()
+    }
 
     render(){   
         let {list, auth} = this.props;
-        if(auth.uid){   
-            console.log(auth.uid)
+        if(!auth.uid){   
+           return <Redirect to='signin'/>
         }
         let coming = 0;
         let notComing = 0;
@@ -39,6 +44,9 @@ class List extends Component{
                             <div>{notComing} :סה"כ לא אישרו הגעה</div>
                             <div>{totalAmount} :סה"כ אורחים</div>
                     </div> 
+                    <div className='Submit'>   
+                                    <button onClick={this.signOutHandler}>Sign Out</button>
+                                </div>
                 </div>
 
                 <div className='Table'>   
@@ -86,21 +94,21 @@ const mapStateToProps = (state) => {
             list.push(arr[i])
         }
     }
-    let auth = state.firebase.auth
-    let uid;
-    if(auth.uid){   
-        uid = auth.uid
-    }
-    console.log(uid)
     return{ 
         list: list,
-        auth: auth
+        auth: state.firebase.auth
 
     }
 }
 
+const mapDispatchToProps = (dispatch) =>{   
+    return{ 
+        signOut: () => dispatch(signOut())
+    }
+}
+
 export default compose(
-    connect(mapStateToProps),
+    connect(mapStateToProps, mapDispatchToProps),
     firestoreConnect([
         { collection: 'list', orderBy: ['date', 'desc']}
     ])

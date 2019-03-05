@@ -2,6 +2,7 @@ import React ,{Component} from 'react'
 import './SignIn.css'
 import {connect} from 'react-redux'
 import {signIn} from '../Store/AuthActions'
+import {Redirect} from 'react-router-dom'
 
 class Signin extends Component{ 
     state = {   
@@ -18,9 +19,15 @@ class Signin extends Component{
     onSubmitHandler = (event) =>{ 
         event.preventDefault();
         this.props.signIn(this.state)
+        this.props.history.push('/list')
     }
+
     render(){ 
         console.log(this.state)  
+        let {auth} = this.props
+        if(auth.uid){   
+            return <Redirect to='list'/>
+         }
         return( 
             <div className='SigninContainer'>
                 <div className='Signin'>   
