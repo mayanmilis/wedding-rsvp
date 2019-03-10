@@ -1,3 +1,5 @@
+Wedding RSVP
+
 App link: https://wedding-rsvp1.herokuapp.com/
 
 Guests list: https://wedding-rsvp1.herokuapp.com/list
